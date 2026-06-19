@@ -31,22 +31,26 @@ If you use this code or data, please cite:
     year    = "2026"
 }
 ```
-## Requirements
 
-Python 3 with Jupyter and the standard scientific stack:
-```
-numpy   scipy   matplotlib   palettable
-```
-The summary plot also overlays haloscope bounds and projections using `PlotFuncs.py`
-and the data in `limit_data/`, taken from [cajohare/AxionLimits](https://github.com/cajohare/AxionLimits).
+<details>
+<summary><b>Requirements</b></summary>
 
-## Repository structure
+Python 3 with Jupyter and the standard scientific stack: `numpy`, `scipy`, `matplotlib`, `palettable`.
+
+The summary plot also overlays haloscope bounds and projections using `PlotFuncs.py` and the data in `limit_data/`, taken from [cajohare/AxionLimits](https://github.com/cajohare/AxionLimits).
+
+</details>
+
+<details>
+<summary><b>Repository structure</b></summary>
 
 - **`binned/`** — binned likelihood analysis (C. Miró).
 - **`unbinned/`** — unbinned likelihood analysis (P. Quílez).
 - **`spectra/`** — notebooks producing the two-axion photon spectra.
 - **`plots/`** — all paper figures (`.pdf` and `.png`).
 - **`data/`** — shared input data.
+
+</details>
 
 ---
 
