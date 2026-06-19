@@ -10,15 +10,14 @@ mimic that of a single axion. This work studies whether a next-generation helios
 such as IAXO could tell them apart, exploiting the spectral imprint of *axion flavor
 oscillations* on the converted X-ray spectrum.
 
-The analysis was carried out **independently in two complementary ways that cross-check
-each other**: a binned likelihood analysis (`binned/`, C. Miró) and an unbinned one
+The analysis was carried out in two complementary ways that cross-check
+each other: a binned likelihood analysis (`binned/`, C. Miró) and an unbinned one
 (`unbinned/`, P. Quílez), together with the spectra notebooks (`spectra/`). The figures
 below are reproduced by clicking on the corresponding notebook(s).
 
 For questions, write to pablo.quilez@cern.ch or carlos.miroarenas@to.infn.it.
 
 ## Citation
-
 If you use this code or data, please cite:
 
 ```bibtex
