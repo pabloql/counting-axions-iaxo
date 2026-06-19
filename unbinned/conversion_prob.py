@@ -1,6 +1,10 @@
 """
 Conversion probabilities for axion-photon conversion in a helioscope.
 
+Authors: B. Grinstein, C. Miro, and P. Quilez
+Title: Counting axions with IAXO
+Cite: arXiv:2606.XXXXX
+
 All cases are special cases of one general two-axion formula:
 
     P(omega; m1, m2) = 0.25 sinc^2(x1) + 0.25 sinc^2(x2)

@@ -1,6 +1,10 @@
 """
 Likelihood ratio test statistic for two-axion discovery.
 
+Authors: B. Grinstein, C. Miro, and P. Quilez
+Title: Counting axions with IAXO
+Cite: arXiv:2606.XXXXX
+
     q0 = 2 * integral[ dN_H1 * ln(dN_H1 / (h * dN_H0)) ] dE
 
 where h = integral(dN_H1) / integral(dN_H0) normalizes to equal total counts.

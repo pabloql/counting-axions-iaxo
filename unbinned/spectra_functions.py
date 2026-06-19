@@ -1,8 +1,12 @@
 """
 General-purpose spectrum plotter for two-axion models.
 
+Authors: B. Grinstein, C. Miro, and P. Quilez
+Title: Counting axions with IAXO
+Cite: arXiv:2606.XXXXX
+
 Usage:
-    from plot_spectra import plot_spectrum_comparison
+    from spectra_functions import plot_spectrum_comparison
 
     configs = [
         {'label': 'Single massless', 'm1': 0, 'm2': 0, 'color': 'k', 'lw': 4, 'alpha': 0.3},
@@ -74,8 +78,7 @@ def resolve_masses(cfg):
 # =============================================================================
 # Default plot output directory
 # =============================================================================
-PLOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Plots')
-OVERLEAF_DIR = '/home/pabloql/Cloud/Dropbox/Aplicaciones/Overleaf/Counting axions with helioscopes/plots'
+PLOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'plots')
 
 
 # =============================================================================
@@ -84,7 +87,7 @@ OVERLEAF_DIR = '/home/pabloql/Cloud/Dropbox/Aplicaciones/Overleaf/Counting axion
 def plot_spectrum_comparison(spectra_configs, E_res_keV=0.1, n_uniform=10000,
                              normalize=True, xlim=None, ylim=None,
                              title=None, xlabel=None, ylabel=None,
-                             save_name=None, save_overleaf=False,
+                             save_name=None,
                              figsize=(8, 6), ax=None):
     """
     Plot one or more spectra on the same axes.
@@ -114,9 +117,7 @@ def plot_spectrum_comparison(spectra_configs, E_res_keV=0.1, n_uniform=10000,
     title : str, optional
         Plot title
     save_name : str, optional
-        Filename (without extension). Saved as .png in Plots/.
-    save_overleaf : bool
-        Also save .pdf to Overleaf directory.
+        Filename (without extension). Saved as .pdf and .png in plots/.
     figsize : tuple
         Figure size
 
@@ -161,10 +162,11 @@ def plot_spectrum_comparison(spectra_configs, E_res_keV=0.1, n_uniform=10000,
                 label=cfg.get('label', ''),
                 zorder=cfg.get('zorder', 2))
 
-    ax.set_xlabel(xlabel or r'Energy [keV]', fontsize=16)
-    ax.set_ylabel(ylabel or r'dN/dE [keV$^{-1}$]', fontsize=16)
+    ax.set_xlabel(xlabel or r'$\omega$ [keV]', fontsize=20, labelpad=8)
+    ax.set_ylabel(ylabel or r'$\mathrm{d}N_\gamma/\mathrm{d}\omega$ [keV$^{-1}$]',
+                  fontsize=20, labelpad=10)
     if title:
-        ax.set_title(title, fontsize=16)
+        ax.set_title(title, fontsize=20)
     if xlim:
         ax.set_xlim(xlim)
     else:
@@ -172,26 +174,17 @@ def plot_spectrum_comparison(spectra_configs, E_res_keV=0.1, n_uniform=10000,
     if ylim:
         ax.set_ylim(ylim)
 
-    ax.legend(fontsize=12, loc='upper right')
-    ax.grid(True, alpha=0.3)
-
-    ax.tick_params(which='major', direction='in', length=8, width=1.5,
-                   top=True, right=True)
-    ax.tick_params(which='minor', direction='in', length=4, width=1,
-                   top=True, right=True)
+    ax.legend(fontsize=15, loc='upper right', frameon=True)
+    ax.tick_params(axis='both', labelsize=18)
 
     plt.tight_layout()
 
     if save_name:
         os.makedirs(PLOT_DIR, exist_ok=True)
-        plot_path = os.path.join(PLOT_DIR, f'{save_name}.png')
-        fig.savefig(plot_path, dpi=150, bbox_inches='tight')
-        print(f"Saved: {plot_path}")
-
-        if save_overleaf and os.path.exists(OVERLEAF_DIR):
-            pdf_path = os.path.join(OVERLEAF_DIR, f'{save_name}.pdf')
-            fig.savefig(pdf_path, dpi=300, bbox_inches='tight')
-            print(f"Saved to Overleaf: {pdf_path}")
+        for ext in ('pdf', 'png'):
+            plot_path = os.path.join(PLOT_DIR, f'{save_name}.{ext}')
+            fig.savefig(plot_path, bbox_inches='tight')
+        print(f"Saved: {os.path.join(PLOT_DIR, save_name)}.pdf/.png")
 
     return fig, ax
 
@@ -201,7 +194,7 @@ def plot_spectrum_comparison(spectra_configs, E_res_keV=0.1, n_uniform=10000,
 # =============================================================================
 def plot_spectrum_ratio(spectra_configs, E_res_keV=0.1, n_uniform=10000,
                         xlim=None, title=None, save_name=None,
-                        save_overleaf=False, figsize=(7, 4.5)):
+                        figsize=(7, 4.5)):
     """
     Plot the ratio of each spectrum to the single massless axion.
 
@@ -241,34 +234,25 @@ def plot_spectrum_ratio(spectra_configs, E_res_keV=0.1, n_uniform=10000,
                 alpha=cfg.get('alpha', 0.8),
                 label=cfg.get('label', ''))
 
-    ax.set_xlabel(r'Energy [keV]', fontsize=16)
-    ax.set_ylabel(r'Ratio to single massless axion', fontsize=16)
+    ax.set_xlabel(r'$\omega$ [keV]', fontsize=20, labelpad=8)
+    ax.set_ylabel(r'Ratio to single massless axion', fontsize=20, labelpad=10)
     if title:
-        ax.set_title(title, fontsize=16)
+        ax.set_title(title, fontsize=20)
     if xlim:
         ax.set_xlim(xlim)
     else:
         ax.set_xlim(omega_min, omega_max)
 
-    ax.legend(fontsize=12, loc='upper right')
-    ax.grid(True, alpha=0.3)
-
-    ax.tick_params(which='major', direction='in', length=8, width=1.5,
-                   top=True, right=True)
-    ax.tick_params(which='minor', direction='in', length=4, width=1,
-                   top=True, right=True)
+    ax.legend(fontsize=15, loc='upper right', frameon=True)
+    ax.tick_params(axis='both', labelsize=18)
 
     plt.tight_layout()
 
     if save_name:
         os.makedirs(PLOT_DIR, exist_ok=True)
-        plot_path = os.path.join(PLOT_DIR, f'{save_name}.png')
-        fig.savefig(plot_path, dpi=150, bbox_inches='tight')
-        print(f"Saved: {plot_path}")
-
-        if save_overleaf and os.path.exists(OVERLEAF_DIR):
-            pdf_path = os.path.join(OVERLEAF_DIR, f'{save_name}.pdf')
-            fig.savefig(pdf_path, dpi=300, bbox_inches='tight')
-            print(f"Saved to Overleaf: {pdf_path}")
+        for ext in ('pdf', 'png'):
+            plot_path = os.path.join(PLOT_DIR, f'{save_name}.{ext}')
+            fig.savefig(plot_path, bbox_inches='tight')
+        print(f"Saved: {os.path.join(PLOT_DIR, save_name)}.pdf/.png")
 
     return fig, ax

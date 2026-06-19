@@ -1,4 +1,4 @@
-# Counting axions with IAXO \cite{} by B. Grinstein, C. Miro and P. Quilez
+# Counting axions with IAXO (arXiv:2606.XXXXX) by B. Grinstein, C. Miro and P. Quilez
 # Quasi-degenerate g_discovery of 2 axions as a function of sqrt_dm2
 # sqrt_dm2[eV]    g_disc[GeV^-1]    q0_over_g4[GeV^-4]
 3.000000e-09 3.451279e-09 6.343400e+34
@@ -100,5 +100,4 @@
 1.531630e-05 1.417016e-09 2.232256e+36
 1.674092e-05 3.695975e-09 4.823099e+34
 1.829804e-05 9.673039e-09 1.027995e+33
-2.000000e-05 3.026488e-08 1.072721e+31
 2.000000e-05 3.026488e-08 1.072721e+31

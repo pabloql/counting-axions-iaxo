@@ -1,6 +1,10 @@
 """
 IAXO experimental parameters, physical constants, and utility functions.
 
+Authors: B. Grinstein, C. Miro, and P. Quilez
+Title: Counting axions with IAXO
+Cite: arXiv:2606.XXXXX
+
 Usage:
     from iaxo_params import IAXO, hbar_c, L_ES_eV, L_magnet_eV
     from iaxo_params import norm_Ngamma, flux_primakoff, apply_energy_resolution
@@ -139,6 +143,29 @@ def apply_energy_resolution(spectrum, omega_keV, E_res_keV,
 def setup_plot_style():
     """Set standard plotting style for publication-quality figures."""
     import matplotlib.pyplot as plt
-    plt.rcParams['axes.linewidth'] = 2.0
-    plt.rc('text', usetex=True)
-    plt.rc('font', family='serif', size=14)
+    plt.rcParams.update({
+        "text.usetex": True,
+        "font.size": 25,
+        "axes.formatter.limits": [-3, 3],
+        "axes.linewidth": 2,
+        "lines.linewidth": 2,
+        "xtick.top": True,
+        "xtick.bottom": True,
+        "ytick.left": True,
+        "ytick.right": True,
+        "xtick.minor.visible": True,
+        "ytick.minor.visible": True,
+        "xtick.direction": "in",
+        "ytick.direction": "in",
+        "xtick.major.width": 2,
+        "xtick.minor.width": 1,
+        "ytick.major.width": 2,
+        "ytick.minor.width": 1,
+        "xtick.major.size": 10,
+        "xtick.minor.size": 5,
+        "ytick.major.size": 10,
+        "ytick.minor.size": 5,
+        "figure.figsize": [8, 7],
+        "savefig.dpi": 300,
+        "savefig.transparent": True,
+    })
