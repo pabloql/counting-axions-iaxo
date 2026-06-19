@@ -1,5 +1,4 @@
 # Counting axions with IAXO
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2606.XXXXX)
 
@@ -18,14 +17,26 @@ below are reproduced by clicking on the corresponding notebook(s).
 
 For questions, write to pablo.quilez@cern.ch or carlos.miroarenas@to.infn.it.
 
+## Citation
+
+If you use this code or data, please cite:
+
+```bibtex
+@article{CountingAxionsIAXO,
+    author  = "Grinstein, Benjam\'in and Mir\'o, Carlos and Qu\'ilez, Pablo",
+    title   = "{Counting axions with IAXO}",
+    eprint  = "2606.XXXXX",
+    archivePrefix = "arXiv",
+    primaryClass  = "hep-ph",
+    year    = "2026"
+}
+```
 ## Requirements
 
 Python 3 with Jupyter and the standard scientific stack:
-
 ```
 numpy   scipy   matplotlib   palettable
 ```
-
 The summary plot also overlays haloscope bounds and projections using `PlotFuncs.py`
 and the data in `limit_data/`, taken from [cajohare/AxionLimits](https://github.com/cajohare/AxionLimits).
 
@@ -178,20 +189,7 @@ three benchmark scenarios at $\omega_\mathrm{res} = 0.4$ MeV. *(Appendix figure.
 
 ---
 
-## Citation
 
-If you use this code or data, please cite:
-
-```bibtex
-@article{CountingAxionsIAXO,
-    author  = "Grinstein, Benjam\'in and Mir\'o, Carlos and Qu\'ilez, Pablo",
-    title   = "{Counting axions with IAXO}",
-    eprint  = "2606.XXXXX",
-    archivePrefix = "arXiv",
-    primaryClass  = "hep-ph",
-    year    = "2026"
-}
-```
 
 ## Acknowledgements
 
