@@ -115,9 +115,9 @@ maximum mass splitting probed scales as $\omega_\mathrm{res}^{-1/2}$. *Right:* t
 marks where IAXO can measure the single axion mass.
 
 ## Fig. 5
-<img src="plots/Resolution.png" width="480">
+<img src="plots/Resolution.png" width="480"> 
 
-[Notebook](binned/Resolution.ipynb)
+[Notebook](binned/Resolution.ipynb) ·  [Spectra notebook](spectra/plot_spectra.ipynb)
 
 Effects of the finite energy resolution of the detector on the photon spectrum in the
 quasi-degenerate regime. The cross marks indicate the energy that triggers the start of the
@@ -160,7 +160,7 @@ number of counts. *(Appendix figure.)*
 ## Fig. 9
 <img src="plots/Appendix_spectra.png" width="700">
 
-[Notebook](binned/Spectra_Appendix.ipynb)
+[Notebook](binned/Spectra_Appendix.ipynb) ·  [Spectra notebook](spectra/plot_spectra.ipynb)
 
 Normalized differential photon spectrum for the quasi-degenerate (*left*) and hierarchical
 (*right*) two-axion scenarios, compared to a single massless axion (gray) and a single massive
@@ -200,3 +200,6 @@ Haloscope bounds and projections shown in the summary plot are taken from
 [cajohare/AxionLimits](https://github.com/cajohare/AxionLimits) (C. O'Hare). The single
 massive axion mass-measurement reach is from the open data of Dafni et al.
 ([arXiv:1811.09290](https://arxiv.org/abs/1811.09290)).
+
+P.Q. acknowledges support from the European Union's Horizon Europe research and innovation
+programme under the Marie Skłodowska-Curie grant agreement No 101207780 — AxionCount.
