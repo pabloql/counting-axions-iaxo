@@ -3,12 +3,12 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2606.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2606.XXXXX)
 
 Code and data to reproduce the results and figures of **"Counting axions with IAXO"**,
-by B. Grinstein, C. Miró, and P. Quílez ([arXiv:2606.XXXXX](https://arxiv.org/abs/2606.XXXXX)).
+by B. Grinstein, C. Miró, and P. Quílez Lasanta([arXiv:2606.XXXXX](https://arxiv.org/abs/2606.XXXXX)).
 
 If more than one axion couples to photons, their combined signal in a helioscope may
 mimic that of a single axion. This work studies whether a next-generation helioscope
 such as IAXO could tell them apart, exploiting the spectral imprint of *axion flavor
-oscillations* on the converted X-ray spectrum.
+oscillations* on the converted X-ray spectrum to resolve the multi-axion scenario.
 
 The analysis was carried out in two complementary ways that cross-check
 each other: a binned likelihood analysis (`binned/`, C. Miró) and an unbinned one
@@ -17,7 +17,7 @@ below are reproduced by clicking on the corresponding notebook(s).
 
 For questions, write to pablo.quilez@cern.ch or carlos.miroarenas@to.infn.it.
 
-## Citation
+### Citation
 If you use this code or data, please cite:
 
 ```bibtex
@@ -47,7 +47,7 @@ The summary plot also overlays haloscope bounds and projections using `PlotFuncs
 - **`unbinned/`** — unbinned likelihood analysis (P. Quílez).
 - **`spectra/`** — notebooks producing the two-axion photon spectra.
 - **`plots/`** — all paper figures (`.pdf` and `.png`).
-- **`data/`** — shared input data.
+- **`data/`** — results data: discrimination regions, bounds and projections.
 
 </details>
 
