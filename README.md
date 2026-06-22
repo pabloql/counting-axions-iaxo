@@ -47,7 +47,7 @@ The summary plot also overlays haloscope bounds and projections using `PlotFuncs
 - **`unbinned/`** — unbinned likelihood analysis (P. Quílez).
 - **`spectra/`** — notebooks producing the two-axion photon spectra.
 - **`plots/`** — all paper figures (`.pdf` and `.png`).
-- **`data/`** — results data: discrimination regions, bounds and projections.
+- **`results_data/`** — results data: discrimination regions, bounds and projections.
 
 </details>
 
