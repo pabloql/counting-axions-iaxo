@@ -1,9 +1,9 @@
 # Counting axions with IAXO
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![arXiv](https://img.shields.io/badge/arXiv-2606.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2606.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-2606.20826-b31b1b.svg)](https://arxiv.org/abs/2606.20826)
 
 Code and data to reproduce the results and figures of **"Counting axions with IAXO"**,
-by B. Grinstein, C. Miró, and P. Quílez Lasanta([arXiv:2606.XXXXX](https://arxiv.org/abs/2606.XXXXX)).
+by B. Grinstein, C. Miró, and P. Quílez Lasanta([arXiv:2606.XXXXX](https://arxiv.org/abs/2606.20826)).
 
 If more than one axion couples to photons, their combined signal in a helioscope may
 mimic that of a single axion. This work studies whether a next-generation helioscope
@@ -21,13 +21,14 @@ For questions, write to pablo.quilez@cern.ch or carlos.miroarenas@to.infn.it.
 If you use this code or data, please cite:
 
 ```bibtex
-@article{CountingAxionsIAXO,
-    author  = "Grinstein, Benjam\'in and Mir\'o, Carlos and Qu\'ilez, Pablo",
-    title   = "{Counting axions with IAXO}",
-    eprint  = "2606.XXXXX",
+@article{Grinstein:2026alk,
+    author = "Grinstein, Benjam{\'\i}n and Mir{\'o}, Carlos and Qu{\'\i}lez Lasanta, Pablo",
+    title = "{Counting axions with IAXO}",
+    eprint = "2606.20826",
     archivePrefix = "arXiv",
-    primaryClass  = "hep-ph",
-    year    = "2026"
+    primaryClass = "hep-ph",
+    month = "6",
+    year = "2026"
 }
 ```
 
