@@ -3,7 +3,7 @@ IAXO experimental parameters, physical constants, and utility functions.
 
 Authors: B. Grinstein, C. Miro, and P. Quilez
 Title: Counting axions with IAXO
-Cite: arXiv:2606.XXXXX
+Cite: arXiv:2606.20826
 
 Usage:
     from iaxo_params import IAXO, hbar_c, L_ES_eV, L_magnet_eV

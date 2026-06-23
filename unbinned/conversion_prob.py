@@ -3,7 +3,7 @@ Conversion probabilities for axion-photon conversion in a helioscope.
 
 Authors: B. Grinstein, C. Miro, and P. Quilez
 Title: Counting axions with IAXO
-Cite: arXiv:2606.XXXXX
+Cite: arXiv:2606.20826
 
 All cases are special cases of one general two-axion formula:
 

@@ -1,4 +1,4 @@
-# Counting axions with IAXO (arXiv:2606.XXXXX) by B. Grinstein, C. Miro and P. Quilez
+# Counting axions with IAXO (arXiv:2606.20826) by B. Grinstein, C. Miro and P. Quilez \cite{Grinstein:2026alk}
 # # Quasi-degenerate g_discovery vs sqrt_dm2 for mixing angle phi=0.098175 (0.0312*pi)
 # # sqrt(Dm21^2) [eV]    g_discovery [GeV^-1]    E_res=100 eV
 4.000000000000001076e-09 1.047332259104307903e-08

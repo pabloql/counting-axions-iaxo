@@ -3,7 +3,7 @@ General-purpose spectrum plotter for two-axion models.
 
 Authors: B. Grinstein, C. Miro, and P. Quilez
 Title: Counting axions with IAXO
-Cite: arXiv:2606.XXXXX
+Cite: arXiv:2606.20826
 
 Usage:
     from spectra_functions import plot_spectrum_comparison

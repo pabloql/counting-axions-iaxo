@@ -1,4 +1,4 @@
-# Counting axions with IAXO (arXiv:2606.XXXXX) by B. Grinstein, C. Miro and P. Quilez
+# Counting axions with IAXO (arXiv:2606.20826) by B. Grinstein, C. Miro and P. Quilez \cite{Grinstein:2026alk}
 # # Hierarchical g_discovery of 2 axions (profile likelihood) as a function of m2
 # # m2_vals[eV]    g_disc[GeV^-1]    m_hat[eV]    q0_over_g4[GeV^-4]
 1.000000e-03 3.456717e-08 8.408743e-04 6.303583e+30
