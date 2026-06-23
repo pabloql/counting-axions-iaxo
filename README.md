@@ -3,7 +3,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2606.20826-b31b1b.svg)](https://arxiv.org/abs/2606.20826)
 
 Code and data to reproduce the results and figures of **"Counting axions with IAXO"**,
-by B. Grinstein, C. Miró, and P. Quílez Lasanta([arXiv:2606.XXXXX](https://arxiv.org/abs/2606.20826)).
+by B. Grinstein, C. Miró, and P. Quílez Lasanta ([arXiv:2606.20826](https://arxiv.org/abs/2606.20826)).
 
 If more than one axion couples to photons, their combined signal in a helioscope may
 mimic that of a single axion. This work studies whether a next-generation helioscope
